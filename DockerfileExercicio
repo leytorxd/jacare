@@ -5,7 +5,7 @@ RUN apt-get update && \
 	rm -rf /var/lib/apt/lists/*
 VOLUME ["/var/cache/nginx"]	
 
-RUN echo "<h1> Curso Docker - NGINX </h1>" | tee /usr/share/nginx/www/
+RUN echo "<h1> Curso Docker - NGINX </h1>" | tee /usr/share/nginx/www/index.html
 
 EXPOSE 88 443
 
